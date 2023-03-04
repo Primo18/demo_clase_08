@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cajitas {
+    margin: 2rem;
+    display: flex;
+}
+
+.cajita {
+    background-color: pink;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+}
+
+.gradient {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    width: 7rem;
+    height: 7rem;
+}
+
+.translate {
+    transition: transform 1s;
+}
+
+.translate:hover {
+    background-color: pink;
+    width: 7rem;
+    height: 7rem;
+    transform: translate(1rem, 1rem);
+}
+
+.rotate {
+    transition: transform 1s;
+}
+
+.rotate:hover {
+    transform: rotateZ(180deg);
+}
+
+.skew {
+    transition: transform 1s;
+}
+
+.skew:hover {
+    transform: skew(10deg, 10deg);
+}
+
+.animaciones {
+    animation: agrandarse 1s infinite;
+}
+
+@keyframes agrandarse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
